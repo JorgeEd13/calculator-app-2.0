@@ -33,6 +33,7 @@ buttons.forEach((btnPress) => {
         }
         if (btnPress.value === 'R') {
             visorValue.value = '';
+            storageValue = '';
         }
     });
 });
