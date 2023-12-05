@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --backColor: #3b4664;
+    --fontColor: #fff;
+    --visorColor: #181f32;
+    --backButtonColor: #252d44;
+    --btnColor: #eae3db;
+    --btnsDnR: #647299;
+    --btnEqual: #d13f30;
+    --btnColorBottom: #b2a295;
+    --btnsDnRBottom: #424e74;
+    --btnEqualBottom: #8f2316;
+    --btnColorHover: #fff;
+    --btnsDnRHover: #a2b3e1;
+    --btnEqualHover: #f96c5b;
+    --btnColorHoverBottom: #b5a598;
+    --btnsDnRHoverBottom: #414e71;
+    --btnEqualHoverBottom: #8e2417;
+}
+
+.calcBody {
+    background-color: var(--backColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.interface {
+    min-width: 20rem;
+    width: 33%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    gap: 4%;
+}
+
+.titleColors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    gap: 5%;
+    color: var(--fontColor);
+}
+
+.titleColors h1 {
+    flex: 1;
+}
+
+.changeStyle {
+    display: flex;
+    background-color: var(--backButtonColor);
+    border-radius: 5rem;
+    width: 3rem;
+    height: 66%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.styleName {
+    font-size: 0.55rem;
+}
+
+.styleButton {
+    cursor: pointer;
+    background-color: transparent;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+.styleButton.selected {
+    background-color: var(--btnEqual);
+}
+
+.styleButton.selected:hover {
+    background-color: var(--btnEqualHover);
+}
+
+.visorSpace {
+    flex: 1.5;
+}
+
+.visor {
+    background-color: var(--visorColor);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: var(--fontColor);
+    padding: 5%;
+    text-align: end;
+    font-size: 2.5rem;
+}
+
+.buttonsBG {
+    background-color: var(--backButtonColor);
+    border-radius: 5px;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 5%;
+}
+
+.topButtons {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+}
+
+.baseButtons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 5%;
+}
+
+.btnCalc {
+    cursor: pointer;
+
+    background-color: var(--btnColor);
+    
+    border-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 10%;
+    border-bottom-color: var(--btnColorBottom);
+}
+
+.btnCalc:hover {
+    background-color: var(--btnColorHover);
+    border-bottom-color: var(--btnColorHoverBottom);
+}
+
+.btnCalc.correct {
+    color: #fff;
+    background-color: var(--btnsDnR);
+    border-bottom-color: var(--btnsDnRBottom);
+}
+
+.btnCalc.correct:hover {
+    background-color: var(--btnsDnRHover);
+    border-bottom-color: var(--btnsDnRHoverBottom);
+}
+
+.btnCalc#equalBtn {
+    color: #fff;
+    background-color: var(--btnEqual);
+    border-bottom-color: var(--btnEqualBottom);
+}
+
+.btnCalc#equalBtn:hover {
+    background-color: var(--btnEqualHover);
+    border-bottom-color: var(--btnEqualHoverBottom);
+}

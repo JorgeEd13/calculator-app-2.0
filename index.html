@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="calcBody">
+            <div class="interface">
+                <div class="titleColors">
+                    <h1>calc</h1>
+                    <span class="styleName">THEME</span>
+                    <div class="changeStyle">
+                        <button class="styleButton selected"></button>
+                        <button class="styleButton"></button>
+                        <button class="styleButton"></button>
+                    </div>
+                </div>
+                <div class="visorSpace">
+                    <input type="text" class="visor" id="response" placeholder="0">
+                </div>
+                <div class="buttonsBG">
+                    <div class="topButtons">
+                        <button class="btnCalc" value="1">1</button>
+                        <button class="btnCalc" value="2">2</button>
+                        <button class="btnCalc" value="3">3</button>
+                        <button class="btnCalc correct" id="delBtn" value="D">DEL</button>
+                        <button class="btnCalc" value="4">4</button>
+                        <button class="btnCalc" value="5">5</button>
+                        <button class="btnCalc" value="6">6</button>
+                        <button class="btnCalc" value="+">+</button>
+                        <button class="btnCalc" value="7">7</button>
+                        <button class="btnCalc" value="8">8</button>
+                        <button class="btnCalc" value="9">9</button>
+                        <button class="btnCalc" value="-">-</button>
+                        <button class="btnCalc" value=".">.</button>
+                        <button class="btnCalc" value="0">0</button>
+                        <button class="btnCalc" value="/">/</button>
+                        <button class="btnCalc" value="*">x</button>
+                    </div>
+                    <div class="baseButtons">
+                        <button class="btnCalc correct" id="resetBtn" value="R">RESET</button>
+                        <button class="btnCalc" id="equalBtn" value="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
