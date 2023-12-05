@@ -25,6 +25,7 @@ buttons.forEach((btnPress) => {
         if (btnPress.value === '=' && visorValue.value != '') {
             storageValue += visorValue.value;
             visorValue.value = eval(storageValue);
+            storageValue = '';
         }
         if (btnPress.value === 'D' && visorValue.value != '') {
             deleteArray = Array.from(visorValue.value);
